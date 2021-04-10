@@ -1,0 +1,75 @@
+<div class="container fixed-bottom colorBody1">
+  <div class="container text-center colorNavbar2">
+
+    <button (click)="privacidad()" type="button" class="btn btn-warning btn-sm cookies8 mt-n1">
+      <u>Política de privacidad y cookies</u>
+    </button>
+
+    <div class="row">
+      <div class="col">
+        <a (click)="whatsApp()" class="cursor7">
+          <i class="fab fa-whatsapp mr-3 ml-3"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook mr-3"></i>
+        </a>
+        <a href="mailto:FedeDJ@FedericaDJ.es" target="_blank">
+          <i class="fas fa-envelope mr-3"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="fab fa-linkedin-in mr-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram mr-3"></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fab fa-twitter mr-3"></i>
+        </a>
+      </div>
+    </div>
+
+    <p class="mb-1">
+      <small class="text-muted colorName3">
+        Copyrigth &copy;&nbsp;David Lechuga Huerta({{year}})&nbsp;Todos los derechos reservados
+
+      </small>
+    </p>
+
+  </div>
+</div>
+
+
+<!-- Modal Privacidad-->
+<div class="modal fade mt-5 py-5" id="privacidad" data-backdrop="static" tabindex="-1" role="dialog"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content colorModal11">
+      <div class="container backModal12">
+        <div class="modal-body text-center colorTexto10">
+          <h4 class="colorName3 text-uppercase mb-4">
+            <u>Política de privacidad y cookies</u>
+          </h4>
+          <p class="font-weight-light text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic, tempore porro minima quam saepe minus
+            eius sit dolore facilis vitae modi cum. Id est voluptatum inventore. Consectetur a pariatur velit
+            voluptatibus laboriosam omnis? Molestiae quae sequi, ipsum consectetur quo quia exercitationem repellat. Quo
+            voluptatum debitis ipsa velit dolor enim sequi tempore numquam perspiciatis, quibusdam voluptate recusandae.
+            Itaque fuga quidem eius ducimus ea. Dolores alias ullam sed ipsam quam nisi facere quo tempora fugiat. Rem
+            deserunt iure id quae velit eum hic soluta rerum quisquam, provident ad aperiam assumenda eius obcaecati?
+            Amet, placeat magni adipisci unde deserunt quas nulla? In aliquam quas eaque nihil officiis temporibus,
+            reprehenderit optio labore quisquam ducimus quaerat id et perspiciatis dolorum animi neque ea aspernatur eos
+            hic dicta dolores.
+            <div class="container text-center">
+              <button *ngIf="modalService.privacidad" (click)="salir()" class="btn btn-outline-warning colorName3"
+                type="button">
+                <i class="fas fa-check"></i>
+              </button>
+              <button *ngIf="!modalService.privacidad" (click)="irAlerta()" class="btn btn-outline-warning colorName3"
+                type="button">
+                <i class="fas fa-check"></i>
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
