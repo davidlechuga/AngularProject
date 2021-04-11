@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NoticiaService } from 'src/app/services/noticia.service';
 
 @Component({
   selector: 'app-noticia-completa',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiaCompletaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public noticiasService: NoticiaService) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
+  }
+
+  back(){
+    window.history.back();
   }
 
 }
