@@ -4,24 +4,25 @@
         <div class="card-title">
             Ingrese nuevo usuario
         </div>
-
-            <div class="form-group mt-4" >
-                <input [(ngModel)]="selectedUsuario.username" type="text" class="form-control" placeholder="Username"  /> 
-            </div>
-            <div class="form-group mt-2" >
-                <input [(ngModel)]="selectedUsuario.email" type="text" class="form-control" placeholder="Email"  /> 
-            </div>
-            <div class="form-group mt-2" >
-                <input [(ngModel)]="selectedUsuario.password" type="text" class="form-control" placeholder="Password"  /> 
-            </div>
-            <div class="form-group mt-2">
-                <button (click)="guardar()" class="btn btn-primary mt-2">
-                    Guardar
-                </button>
-                <button (click)="nuevo()" class="btn btn-danger mt-2">
-                    Nuevo
-                </button>
-            </div>
+            
+                <div class="form-group mt-4" >
+                    <input [(ngModel)]="selectedUsuario.username" type="text" class="form-control" placeholder="Username"  /> 
+                </div>
+                <div class="form-group mt-2" >
+                    <input [(ngModel)]="selectedUsuario.email" type="text" class="form-control" placeholder="Email"  /> 
+                </div>
+                <div class="form-group mt-2" >
+                    <input [(ngModel)]="selectedUsuario.password" type="text" class="form-control" placeholder="Password"  /> 
+                </div>
+                <div class="form-group mt-2">
+                    <button (click)="guardar()" class="btn btn-primary mt-2">
+                        Guardar
+                    </button>
+                    <button (click)="nuevo()" class="btn btn-danger mt-2">
+                        Nuevo
+                    </button>
+                </div>
+            
     </div>
 </div>
 
