@@ -8,8 +8,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ModalsComponent } from './shared/modals/modals.component';
 
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule,  } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UsuarioService } from './services/usuario.service';
 
 
 @NgModule({
@@ -18,14 +19,17 @@ import { FormsModule } from '@angular/forms';
     NoticiaCompletaComponent,
     NavbarComponent,
     FooterComponent,
-    ModalsComponent
+    ModalsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
-  providers: [],
+  providers: [UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
